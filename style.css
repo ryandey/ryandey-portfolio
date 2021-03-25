@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   --color-primary: #F4F5F7;
   --color-accent: #0052CC;
+  --color-accent-dark: #172B4D;
   --text-primary: #5E6C84;
 }
 
@@ -86,6 +87,11 @@
   background: var(--color-accent);
   color: var(--color-primary);
   font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #0c63e6;
 }
 
 .navbar__links:hover {
@@ -189,5 +195,60 @@
   }
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: var(--color-primary);
+  padding: 200px 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+}
+
+.hero__heading {
+  font-size: 7rem;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  transform: translateX(-5px);
+  margin-bottom: 20px;
+  color: var(--color-accent-dark);
+}
+
+.hero__description {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 3.5rem;
+}
+
+.main__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 3px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main__btn:hover {
+  background: #0c63e6;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__container {
+    padding: 0 50px;
   }
 }
