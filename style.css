@@ -5,6 +5,7 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   --color-primary: #F4F5F7;
+  --color-secondary: #e4eaf5;
   --color-accent: #0052CC;
   --color-accent-dark: #172B4D;
   --text-primary: #5E6C84;
@@ -251,4 +252,29 @@
   .hero__container {
     padding: 0 50px;
   }
+}
+
+.main {
+  background: var(--color-secondary);
+  padding: 100px 0;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+}
+
+.work__heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+  letter-spacing: -2px;
+}
+
+.work__description {
+  font-size: 1.5rem;
+  color: var(--text-primary);
 }
