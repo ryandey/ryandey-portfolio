@@ -8,6 +8,7 @@
   --color-secondary: #e4eaf5;
   --color-accent: #0052CC;
   --color-accent-dark: #172B4D;
+  --color-accent-light: #c4dcff;
   --text-primary: #5E6C84;
 }
 
@@ -197,6 +198,22 @@
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+/* Alert section */
+.alert {
+  background: var(--color-accent-light);
+  padding: 8px 0;
+}
+
+.alert__container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alert__text {
+  color: var(--color-accent-dark);
 }
 
 /* Hero Section */
